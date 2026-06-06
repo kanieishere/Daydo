@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", "Inter", sans-serif;
+  --font-cute: "Inter", ui-sans-serif, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-pastel-coral: #FEC5BB;
+  --color-pastel-rose-light: #FCD5CE;
+  --color-pastel-rose: #FAE1DD;
+  --color-pastel-rose-bg: #F8EDEB;
+  --color-pastel-gray: #E8E8E4;
+  --color-pastel-green: #D8E2DC;
+  --color-pastel-sand: #ECE4DB;
+  --color-pastel-peach-light: #FFE5D9;
+  --color-pastel-peach: #FFD7BA;
+  --color-pastel-orange: #FEC89A;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F8EDEB;
+  color: #374151;
+}
+
+/* Custom subtle animation classes */
+@keyframes pop-bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.animate-pop-bounce {
+  animation: pop-bounce 0.4s ease-in-out;
+}
+
